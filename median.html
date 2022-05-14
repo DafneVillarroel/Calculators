@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/median.css">
+  <link rel="stylesheet" href="./public/css/meanTablet.css" media="(min-width: 500px)">
+  <title>Median</title>
+</head>
+
+<body>
+  <header class="header">
+    <ul class="enlaces-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./circle.html">Worshop #1</a></li>
+      <li><a href="./discounts.html">Worshop #2</a></li>
+      <li><a href="./mean.html">Worshop #3</a></li>
+      <li><a href="./median.html">Worshop #4</a></li>
+      <li><a href="./mode.html">Worshop #5</a></li>
+    </ul>
+    <button class="ham" type="button">
+      <span class="br-1"></span>
+      <span class="br-2"></span>
+      <span class="br-3"></span>
+    </button>
+
+  </header>
+  <section class="wrapper">
+    <h1>Median calculator</h1>
+    <div class="wrapper-content">
+      <label for="CALCULATE-LIST">Enter your data: </label>
+      <input id="CALCULATE-LIST" type="text" placeholder="Ex: 20, 12, 120, 211">
+      <button class="button-content" type="button" onclick="calculateMedian()">Median</button>
+      <div class="answer_container">
+        <p id="ResultM"></p>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <h3>Developed by Dafne Villarroel</h3>
+  </section>
+  <script src="/src/mean.js"></script>
+</body>
+
+</html>

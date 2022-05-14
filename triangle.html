@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric figures - platzi-practical-course-javascript</title>
+  <link rel="stylesheet" href="./public/css/triangle.css">
+  <link rel="stylesheet" href="./public/css/figureTablet.css" media="(min-width: 500px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <ul class="enlaces-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./circle.html">Worshop #1</a></li>
+      <li><a href="./discounts.html">Worshop #2</a></li>
+      <li><a href="./mean.html">Worshop #3</a></li>
+      <li><a href="./median.html">Worshop #4</a></li>
+      <li><a href="./mode.html">Worshop #5</a></li>
+    </ul>
+    <button class="ham" type="button">
+      <span class="br-1"></span>
+      <span class="br-2"></span>
+      <span class="br-3"></span>
+    </button>
+
+  </header>
+  </section>
+  <div class="wrapper">
+    <div class="wrapper-content">
+      <section class="header-content">
+        <ul class="Menu">
+          <li class="Menu-item"><a href="./square.html">Squeare</a></li>
+          <li class="Menu-item"><a href="./circle.html">Circle</a></li>
+          <li class="Menu-item"><a href="./triangle.html">Triangle</a></li>
+        </ul>
+      </section>
+      <div class="image">
+        <img src="./public/images/trianglel.svg" alt="">
+      </div>
+      <h2>Calculate the perimeter of a triangle</h2>
+
+      <label for="InputSideA">
+        Write when you measure side 1 of your triangle
+      </label>
+      <input class="inputA" id="InputSideA" type="number" placeholder="Enter side 1" />
+      <label for="InputSideB">
+        Write when you measure side 2 of your triangle
+      </label>
+      <input class="inputA" id="InputSideB" type="number" placeholder="Enter side 2" />
+      <label for="InputSideC">
+        Write when you measure the base of your triangle
+      </label>
+      <input class="inputA" id="InputSideC" type="number" placeholder="Enter the base" />
+      <button class="button-content" class="buttonA" type="button" onclick="calculatePerimeterTriangle()">
+        Calculate the perimeter
+      </button>
+      <p id="ResultTp"></p>
+    </div>
+    <div class="wrapper-content">
+      <h2>Calculate the area of a triangle</h2>
+      <label for="InputSideD">
+        Write when you measure the base of your triangle
+      </label>
+      <input id="InputSideD" type="number" placeholder="Enter the base" />
+      <label for="InputSideE">
+        Write the height of your triangle
+      </label>
+      <input id="InputSideE" type="text" placeholder="Enter the height">
+      <button class="button-content" class="buttonB" type="button" onclick="calculateAreaTriangle()">
+        Calculate the area
+      </button>
+      <p id="ResultTa"></p>
+    </div>
+  </div>
+  <section class="footer">
+    <div>
+      <h3>Developed by Dafne Villarroel</h3>
+    </div>
+  </section>
+  <script src="./src/figures.js"></script>
+</body>
+
+</html>

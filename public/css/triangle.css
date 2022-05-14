@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+--color-menu:white;
+--dark-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,5,66,1) 58%, rgba(31,5,70,1) 100%);
+--roboto:'Roboto', sans-serif;
+--nunito: 'Nunito', sans-serif;
+--blue-color:linear-gradient(90deg, rgba(12,11,32,1) 0%, rgba(9,10,59,1) 67%, rgba(6,5,73,1) 100%);
+--violet-color:#C194F7;
+}
+.ham{
+  cursor:pointer;
+  border:none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top:15px;
+  right: 25px;
+}
+.ham span{
+  display: block;
+  background-color:var(--color-menu);
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.enlaces-menu{
+  display: flex;
+  padding:0;
+  background-image:url(https://www.xtrafondos.com/descargar.php?id=3149&resolucion=2560x1440);
+  animation: movement 20s infinite linear alternate;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  display: none;
+  font-family: var(--nunito);
+}
+.enlaces-menu li{
+  padding: 0 40px;
+  list-style-type: none;
+  transition: 0.3s;
+}
+.enlaces-menu li a{
+   color: var(--color-menu);
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+}
+.enlaces-menu li:hover{
+  background:var(--violet-details);
+}
+.enlaces-menu li{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.enlaces-menu.activado{
+  display: flex;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height:770px;
+  background-image:url(https://www.xtrafondos.com/descargar.php?id=3149&resolucion=2560x1440);
+  animation: movement 20s infinite linear alternate;
+
+}
+
+@keyframes movement {
+  from{
+ background-position: bottom left;
+  }to{
+ background-position: top right;
+  }
+}
+.wrapper-content:first-child{
+   margin-block-start: 90px;
+}
+.wrapper-content{
+  width: 90%;
+  min-height:210px;
+  min-width: 270px;
+  max-width: 900px;
+  margin:0 auto;
+  background: var(--dark-color);
+  color: var(--color-menu);
+  font-family: var(--roboto);
+  border-radius: 25px;
+  margin-block-end: 30px;
+}
+.image img{
+  width: 130px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-block-start:15px
+}
+
+.button-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border:none;
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  padding: 16px;
+  background:black;
+  color:var(--color-menu);
+  margin: 17px auto;
+}
+.button-content:hover{
+  background:#a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-inline: 25px;
+}
+input{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 240px;
+  height: 30px;
+  margin-block:10px;
+  padding-inline: 10px;
+  margin: 0 auto;
+}
+
+.header-content{
+background:var(--blue-color);
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+.Menu{
+display: flex;
+list-style: none;
+justify-content: space-around;
+padding-inline: 40px;
+}
+ul li a{
+  text-decoration: none;
+  color:var(--color-menu);
+  font-weight: bold;
+  font-family: var(--nunito);
+}
+ul li a:hover{
+   color:var(--violet-color);
+}
+.Menu-item{
+margin-block:18px;
+}
+h2{
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  padding-block: 7px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p{
+  font-size: 14px;
+  text-align: center;
+  margin-block: 10px;
+  font-family: var(--nunito);
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: var(--dark-color);
+   font-family: var(--roboto);
+   font-size: 12px;
+   color: var(--color-menu);
+}

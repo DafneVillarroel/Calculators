@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric figures - platzi-practical-course-javascript</title>
+  <link rel="stylesheet" href="./public/css/figure.css">
+  <link rel="stylesheet" href="./public/css/figureTablet.css" media="(min-width: 500px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <ul class="enlaces-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./circle.html">Worshop #1</a></li>
+      <li><a href="./discounts.html">Worshop #2</a></li>
+      <li><a href="./mean.html">Worshop #3</a></li>
+      <li><a href="./median.html">Worshop #4</a></li>
+      <li><a href="./mode.html">Worshop #5</a></li>
+    </ul>
+    <button class="ham" type="button">
+      <span class="br-1"></span>
+      <span class="br-2"></span>
+      <span class="br-3"></span>
+    </button>
+
+  </header>
+
+  <div class="wrapper">
+    <div class="wrapper-content">
+      <section class="circle-header">
+        <section class="header-content">
+          <ul class="Menu">
+            <li class="Menu-item"><a href="./square.html">Squeare</a></li>
+            <li class="Menu-item"><a href="./circle.html">Circle</a></li>
+            <li class="Menu-item"><a href="./triangle.html">Triangle</a></li>
+          </ul>
+        </section>
+        <section class="circle">
+          <h2>Calculate the area and perimeter of a circle</h2>
+          <div class="image">
+            <img src="./public/images/oval.svg" alt="">
+          </div>
+          <label for="InputCircle">
+            Write how long each side of your square is
+          </label>
+          <input id="InputCircle" type="number" placeholder="Enter the radius" />
+          <button class="button-content" type="button" onclick="calculatePerimeterCircle()">
+            Calculate the perimeter
+          </button>
+          <button class="button-content" type="button" onclick="calculateAreaCircle()">
+            Calculate the area
+          </button>
+          <p id="ResultCp"></p>
+          <p id="ResultCa"></p>
+        </section>
+    </div>
+  </div>
+  <section class="footer">
+    <div>
+      <h3>Developed by Dafne Villarroel</h3>
+    </div>
+  </section>
+  <script src="./src/figures.js"></script>
+
+</body>
+
+</html>

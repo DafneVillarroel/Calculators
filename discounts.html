@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentages and discounts</title>
+  <link rel="stylesheet" href="./public/css/discounts.css">
+  <link rel="stylesheet" href="./public/css/discountsTablet.css" media="(min-width: 500px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="enlaces-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./circle.html">Worshop #1</a></li>
+      <li><a href="./discounts.html">Worshop #2</a></li>
+      <li><a href="./mean.html">Worshop #3</a></li>
+      <li><a href="./median.html">Worshop #4</a></li>
+      <li><a href="./mode.html">Worshop #5</a></li>
+    </ul>
+    <button class="ham" type="button">
+      <span class="br-1"></span>
+      <span class="br-2"></span>
+      <span class="br-3"></span>
+    </button>
+
+  </header>
+  <section class="wrapper">
+    <div class="wrapper-content">
+      <h2>Calculate the discount of your products</h2>
+      <label for="InputPrice">Price:</label>
+      <div>
+        <input id="InputPrice" type="number" placeholder="Insert numbers..">
+      </div>
+      <label for="InputDiscound">Discount:</label>
+      <input id="InputDiscound" type="number" placeholder="Insert numbers..">
+      <button class="button-content" type="button" onclick="onclickButtonPriceDiscount()">
+        Calculate discount
+      </button>
+      <label for="InputCoupon">Do you have a coupon?</label>
+      <input id="InputCoupon" type="text" placeholder="Insert Coupon">
+      <button class="button-content" type="button" onclick="onclickButtonPriceCupon()">
+        Discount + Coupon
+      </button>
+      <p id="ResultP"></p>
+      <p id="ResultPC"></p>
+    </div>
+  </section>
+  <section class="footer">
+    <h3>Developed by Dafne Villarroel</h3>
+  </section>
+  <script src="/src/discounts.js"></script>
+</body>
+
+</html>

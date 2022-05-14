@@ -1,0 +1,195 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+--color-content:#e19ca7;
+--color-menu:white;
+--border-color:#212121;
+--dark-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,5,66,1) 58%, rgba(31,5,70,1) 100%);
+--roboto:'Roboto', sans-serif;
+--nunito: 'Nunito', sans-serif;
+--blue-color:linear-gradient(90deg, rgba(12,11,32,1) 0%, rgba(9,10,59,1) 67%, rgba(6,5,73,1) 100%);
+--violet-color:#C194F7;
+}
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-block: 10px;
+}
+main{
+  border: 1px solid var(--border-color);
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: var(--dark-color);
+  max-inline-size: 623px;
+  height: 75px;
+  text-align: center;
+  color: var(--color-menu);
+  padding-block: 10px;
+  font-family: var(--nunito);
+}
+.header ul{
+  list-style: none;
+}
+.wrapper{
+  max-inline-size: 623px;
+  border: 1px solid var(--border-color);
+  height:540px;
+  background-image:url(https://www.xtrafondos.com/descargar.php?id=3149&resolucion=2560x1440);
+  background-size: 100%;
+  animation: movement 6s infinite linear alternate;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: var(--dark-color);
+   font-family: var(--roboto);
+   font-size: 14px;
+}
+.dev{
+  color: var(--color-menu);
+  font-size: 14px;
+}
+
+@keyframes movement {
+  from{
+ background-position: bottom left;
+  }to{
+ background-position: top right;
+  }
+}
+.wrapper-content{
+  border: 1px solid var(--border-color);
+  max-inline-size: 640px;
+  height: 400px;
+  background: var(--dark-color);
+  margin: auto;
+  margin-block-start: 5px;
+  color: var(--color-menu);
+  font-family: var(--roboto);
+  border-radius: 25px;
+   margin-inline: 10px;
+}
+.image img{
+  width: 130px;
+  height: 50px;
+  margin-inline: 110px;
+  margin-block-end: 10px;
+}
+button{
+  border-radius: 2px;
+  border:none;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  background:black;
+  color:white;
+  margin-block: 5px;
+   margin-inline: 107px;
+   font-weight:bold;
+}
+button:hover{
+  background:#a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+}
+input{
+  border-radius: 10px;
+  width: 220px;
+  height: 30px;
+  margin-inline: 72px;
+  margin-block:10px;
+  padding-inline: 10px;
+}
+label{
+  margin-inline: 25px;
+}
+.header-content{
+border:var(--color-menu);
+height: 60px;
+background:var(--blue-color);
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+.Menu{
+display: flex;
+list-style: none;
+justify-content: space-around;
+padding-inline:40px;
+}
+ul li a{
+  text-decoration: none;
+ color:var(--color-menu);
+}
+ul li a:hover{
+   color:var(--violet-color);
+}
+.Menu-item{
+margin-block:18px;
+}
+h2{
+  font-size: 14px;
+  padding-block: 7px;
+  text-align: center;
+}
+h1{
+  font-size: 28px;
+}
+p{
+  text-align: center;
+  font-size: 14.5px;
+  margin-block-end: 5px;
+}
+.log{
+  text-align: center;
+  color: var(--color-menu);
+  margin-block-start: 10px;
+}
+
+@media screen and (min-width:1366px){
+  .header{
+    max-width: 100%;
+    height: 50px;
+    font-weight: bold;
+  }
+  .wrapper{
+    max-width: 100%;
+  }
+  .wrapper-content{
+    max-width: 640px;
+    margin: auto;
+    margin-block-start: 10px;
+  }
+  .image img{
+    margin-inline: 260px;
+  }
+  button{
+    margin-block: 10px;
+     margin-inline: 247px;
+  }
+  input{
+    width: 240px;
+    height: 30px;
+    margin-inline: 200px;
+  }
+  label{
+    margin-inline: 170px;
+  }
+  .Menu{
+  padding-inline: 100px;
+  }
+  h1{
+    font-size: 32px;
+    margin-block-start: 10px;
+  }
+}

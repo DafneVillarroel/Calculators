@@ -1,0 +1,28 @@
+.enlaces-menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline-end:15px;
+  height:12vh;
+  background: var(--dark-color);
+}
+.enlaces-menu li{
+  width: 120px;
+  padding: 0px;
+  border-radius: 25px;
+}
+.enlaces-menu li:hover{
+  letter-spacing: 1px;
+  transform: scale(1.05);
+}
+.ham span{
+  display: none;
+}
+.enlaces-menu li a{
+  font-size: 18px;
+}
+.wrapper-content{
+  width: 550px;
+  margin-block-start: 30px;
+}
